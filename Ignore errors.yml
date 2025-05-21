@@ -1,9 +1,8 @@
 ---
 - hosts: all
-  # ignore_unreachable: true
   tasks:
   - name: list_files
-    shell: ls1
+    shell: ls
     ignore_errors: true
     register: list_values
   - debug:
