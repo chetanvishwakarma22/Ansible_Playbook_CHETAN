@@ -4,6 +4,7 @@
     - name: list files
       shell: ls
       notify: show_message
+      
   handlers:
     - name: show_message
       debug:
