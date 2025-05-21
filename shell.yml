@@ -6,3 +6,9 @@
     register: list_values
   - debug:
       var: list_values.stdout_lines
+
+  - name: disc_space
+    shell: df -h 
+    register: disc_space_value
+  - debug:
+      var: disc_space_value.stdout_lines
