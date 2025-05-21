@@ -7,6 +7,7 @@
     register: list_values
   - debug:
       var: list_values.stdout_lines
+      
   - name: date_display
     shell: date
     register: today_date
